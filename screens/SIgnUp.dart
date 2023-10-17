@@ -47,12 +47,12 @@ class _SignupPageState extends State<SignupPage> {
                   Color(0xFF000208).withOpacity(1),
                   Color(0xFF182C41).withOpacity(0.85),
                 ],
-                stops: [0.65, 1.0],
+                stops: [0.68, 1.0],
               ),
             ),
             child: Center(
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(30),
                 child: Form(
                   key: _formKey,
                   child: Column(
@@ -60,7 +60,7 @@ class _SignupPageState extends State<SignupPage> {
                     children: <Widget>[
                       Container(
                         alignment: Alignment.centerLeft,
-                        padding: const EdgeInsets.all(15),
+                        padding: const EdgeInsets.fromLTRB(5, 10, 20, 30),
                         child: const Text(
                           'Sign Up',
                           style: TextStyle(
@@ -71,7 +71,13 @@ class _SignupPageState extends State<SignupPage> {
                         ),
                       ),
                       Container(
-                        padding: const EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey, width: 1),
+                          borderRadius: BorderRadius.circular(7.0),
+
+
+                        ),
                         child: TextFormField(
                           controller: emailController,
                           validator: (value) {
@@ -81,9 +87,8 @@ class _SignupPageState extends State<SignupPage> {
                             return null;
                           },
                           decoration: InputDecoration(
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(7.0),
-                            ),
+                            border: InputBorder.none,
+
                             hintText: 'Email',
                             hintStyle: TextStyle(
                               color: Colors.grey,
@@ -100,7 +105,13 @@ class _SignupPageState extends State<SignupPage> {
                       ),
                       SizedBox(height: 10),
                       Container(
-                        padding: const EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey, width: 1),
+                          borderRadius: BorderRadius.circular(7.0),
+
+
+                        ),
                         child: TextFormField(
                           obscureText: true,
                           controller: passwordController,
@@ -111,9 +122,7 @@ class _SignupPageState extends State<SignupPage> {
                             return null;
                           },
                           decoration: InputDecoration(
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(7.0),
-                            ),
+                            border: InputBorder.none,
                             hintText: 'Password',
                             hintStyle: TextStyle(
                               color: Colors.grey,
@@ -128,8 +137,15 @@ class _SignupPageState extends State<SignupPage> {
                           ),
                         ),
                       ),
+                      SizedBox(height: 10),
                       Container(
-                        padding: const EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey, width: 1),
+                          borderRadius: BorderRadius.circular(7.0),
+
+
+                        ),
                         child: TextFormField(
                           obscureText: true,
                           controller: confirmPasswordController,
@@ -143,9 +159,7 @@ class _SignupPageState extends State<SignupPage> {
                             return null;
                           },
                           decoration: InputDecoration(
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(7.0),
-                            ),
+                            border: InputBorder.none,
                             hintText: 'Confirm Password',
                             hintStyle: TextStyle(
                               color: Colors.grey,
@@ -160,6 +174,7 @@ class _SignupPageState extends State<SignupPage> {
                           ),
                         ),
                       ),
+                      SizedBox(height: 15),
                       Container(
                         height: 60,
                         width: 150,
