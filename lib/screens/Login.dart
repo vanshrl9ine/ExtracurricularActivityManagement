@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yashgautam/screens/Signup.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,20 +12,20 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         resizeToAvoidBottomInset: false,
-        body: const MyStatefulWidget(),
+        body: const LoginScreen(),
       ),
     );
   }
 }
 
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({Key? key}) : super(key: key);
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({Key? key}) : super(key: key);
 
   @override
-  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
+  State<LoginScreen> createState() => _LoginScreenState();
 }
 
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
@@ -205,6 +206,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     ),
                     onPressed: () {
                       // Sign-up screen
+                      Navigator.pushNamed(context, '/signup');
 
                     },
                   ),

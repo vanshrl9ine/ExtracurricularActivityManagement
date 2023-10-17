@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:yashgautam/screens/Login.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -231,6 +231,8 @@ class _SignupPageState extends State<SignupPage> {
                     ),
                     onPressed: () {
                       // Navigate to the login screen
+                      Navigator.pushNamed(context, '/');
+
                     },
                   ),
                 ],
