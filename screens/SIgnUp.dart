@@ -57,9 +57,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     children: <Widget>[
                       Container(
                         alignment: Alignment.centerLeft,
-                        padding: const EdgeInsets.all(12),
+                        padding: const EdgeInsets.all(15),
                         child: const Text(
-                          'SignUp',
+                          'Sign Up',
                           style: TextStyle(
                             fontSize: 28,
                             fontFamily: 'OpenSans',
@@ -68,7 +68,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                         ),
                       ),
                       Container(
-                        padding: const EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(15),
                         child: TextFormField(
                           controller: emailController,
                           validator: (value) {
@@ -90,7 +90,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                         ),
                       ),
                       Container(
-                        padding: const EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(15),
                         child: TextFormField(
                           obscureText: true,
                           controller: passwordController,
@@ -113,7 +113,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                         ),
                       ),
                       Container(
-                        padding: const EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(15),
                         child: TextFormField(
                           obscureText: true,
                           controller: confirmPasswordController,
@@ -138,18 +138,20 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                         ),
                       ),
                       TextButton(
+
                         onPressed: () {
                           // Forgot password screen
                         },
                         child: const Text(
                           'Forgot Password',
-                          textAlign: TextAlign.left,
+                          textAlign: TextAlign.right,
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
                       Container(
-                        height: 50,
-                        padding: const EdgeInsets.all(10),
+                        height: 70,
+                        width: 120,
+                        padding: const EdgeInsets.all(15),
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.white,
