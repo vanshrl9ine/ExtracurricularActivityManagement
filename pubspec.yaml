@@ -52,10 +52,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-  fonts:
-    - family: OpenSans
-      fonts:
-        - asset: assets/OpenSansRegular.ttf
+
 
 
   # The following line ensures that the Material Icons font is

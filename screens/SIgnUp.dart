@@ -26,7 +26,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   TextEditingController passwordController = TextEditingController();
   TextEditingController confirmPasswordController = TextEditingController();
   bool isPasswordMatching = true;
-  final _formKey = GlobalKey<FormState(); // Key for form validation
+  final _formKey = GlobalKey<FormState>(); // Key for form validation
 
   @override
   Widget build(BuildContext context) {
@@ -55,6 +55,18 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
+                      Container(
+                        alignment: Alignment.centerLeft,
+                        padding: const EdgeInsets.all(12),
+                        child: const Text(
+                          'SignUp',
+                          style: TextStyle(
+                            fontSize: 28,
+                            fontFamily: 'OpenSans',
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
                       Container(
                         padding: const EdgeInsets.all(10),
                         child: TextFormField(
