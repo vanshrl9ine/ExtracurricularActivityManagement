@@ -36,6 +36,7 @@ class _SignupPageState extends State<SignupPage> {
     double screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      backgroundColor: Color(0xFF000208),
       body: Stack(
         children: [
           Container(
